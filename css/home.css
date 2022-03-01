@@ -1,0 +1,299 @@
+/****************Imports****************/
+
+/*Font raleway. 400n&i, 600n&i, 700n&i, 800n&i*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+
+/****************Vars****************/
+
+:root {
+    --main-bg-color: #F5F5F5;
+    --second-bg-color: #EAF2FD;
+    --third-bg-color: #ffffff;
+    --main-color: #464646;
+    --main-font-family: 'Raleway', sans-serif;
+}
+
+/****************Resets****************/
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+}
+
+/****************Styles****************/
+
+body{
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/*Header*/
+#headerhome{
+    max-width: 1440px;
+    padding: 0 2%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 88px;
+}
+.logo-container{
+    max-width: 109px;
+}
+.logo-container img{
+    width: 100%;
+}
+.navbar-primary ul{
+    display: inline;
+    list-style: none;
+}
+.navbar-primary li{
+    display: inline;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+#headerhome a{
+    text-decoration: none;
+    color: var(--main-color);
+    opacity: 0.7;
+    transition: all ease-in-out 0.2s;
+}
+#headerhome a:hover{
+    opacity: 1;
+}
+
+/*Hero*/
+#hero{
+    max-width: 1440px;
+    padding: 0 2%;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+#hero article{
+    width: 70%;
+}
+#hero h2{
+    font-size: 52px;
+    line-height: 61px;
+    font-weight: 700;
+    margin: 24px 0;
+}
+#hero p{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 24px 0;
+}
+#hero div{
+    max-width: 30%;
+}
+#hero img{
+    width: 100%;
+    border-radius: 50%;
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+.social-links li{
+    margin-right: 32px;
+}
+.social-links a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-color);
+}
+.social-links li img{
+    width: 16px;
+    height: 16px;
+}
+
+/*Sobremi*/
+#sobremi{
+    width: 100%;
+    background-color: var(--second-bg-color);
+    padding: 64px 0;
+}
+#sobremi article{
+    max-width: 1440px;
+    padding: 0 2%;
+    margin: 20px auto;
+}
+#sobremi h3{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    margin: 16px 0;
+}
+#sobremi p{
+    line-height: 19px;
+    margin: 16px 0;
+}
+#sobremi img{
+    max-width: 140px;
+}
+
+/*Skills*/
+#skills, #hobbies{
+    max-width: 1440px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+#skills h3, #hobbies h3{
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin: 32px 0;
+}
+#skills ul, #hobbies ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#skills li, #hobbies li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: var(--third-bg-color);
+    list-style: none;
+    width: 176px;
+    height: 174px;
+    margin: 0 16px;
+    padding: 16px;
+}
+#skills ul h5, #hobbies ul h5{
+    font-weight: 700;
+    line-height: 19px;
+    margin: 8px 0;
+}
+
+/****************Media querys****************/
+
+/*1440, desktop clasico*/
+@media only screen and (max-width : 1440px) {
+}
+
+/*992, desktop pequeño o tablet grande*/
+@media only screen and (max-width : 992px) {
+    /*header*/
+    #headerhome{
+        width: 100%;
+        margin: 0 auto;
+        padding: 16px 32px;
+    }
+    .navbar-primary ul{
+        display: none;
+    }
+    /*hero*/
+    #hero{
+        margin: 0;
+        padding: 0 32px;
+    }
+    #hero article{
+        width: 60%;
+    }
+    #hero h2{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    #hero p{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    #hero div{
+        max-width: 40%;
+    }
+    /*sobremi*/
+    #sobremi{
+        padding: 32px 0;
+    }
+    #sobremi article{
+        padding: 0 32px;
+    }
+    #sobremi h3{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    #sobremi p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    /*skills and hobbies*/
+    #skills, #hobbies{
+        padding: 0 32px;
+        margin: 0 auto;
+    }
+    #skills h3, #hobbies h3{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    #skills ul, #hobbies ul{
+        flex-wrap: wrap;
+    }
+    #skills li, #hobbies li{
+        width: 224px;
+        height: 118px;
+        margin: 16px 16px;
+        flex-grow: 1;
+    }
+}
+/*640, tablet pequeña*/
+@media only screen and (max-width : 640px) {
+    /*hero*/
+    #hero{
+        flex-direction: column;
+    }
+    #hero article{
+        width: 100%;
+        margin: 16px 0;
+    }
+    #hero p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .social-links li{
+        margin: 0 8px;
+    }
+    .social-links h5{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .social-links img{
+        width: 10px;
+    }
+    #hero div{
+        width: 100%;
+    }
+    #hero div img{
+        width: 98px;
+        margin: 16px 0;
+    }
+    /*sobremi*/
+    #sobremi{
+        padding: 32px 0;
+    }
+    /*skills and hobbies*/
+    #skills, #hobbies{
+        padding: 0;
+        margin: 0 auto;
+    }
+    #skills li, #hobbies li{
+        width: 156px;
+        height: 118px;
+    }
+}
