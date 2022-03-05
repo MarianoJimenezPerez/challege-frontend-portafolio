@@ -149,7 +149,7 @@ body{
     max-width: 140px;
 }
 
-/*Skills*/
+/*Skills & hobbies*/
 #skills, #hobbies{
     width: 100%;
     max-width: 1440px;
@@ -180,6 +180,10 @@ body{
     height: 174px;
     margin: 0 16px;
     padding: 16px;
+}
+#hobbies li img{
+    width: 24px;
+    height: 25px;
 }
 #skills ul h5, #hobbies ul h5{
     font-weight: 700;
