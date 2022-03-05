@@ -18,6 +18,7 @@
 *, *::before, *::after{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /****************Styles****************/
@@ -33,11 +34,11 @@ body{
 /*Header*/
 #headerhome{
     max-width: 1440px;
-    padding: 0 2%;
-    margin: 20px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 88px;
 }
 .logo-container{
@@ -54,6 +55,7 @@ body{
     display: inline;
     padding: 0 10px;
     margin-right: 10px;
+    text-transform: capitalize;
 }
 #headerhome a{
     text-decoration: none;
@@ -68,11 +70,9 @@ body{
 /*Hero*/
 #hero{
     max-width: 1440px;
-    padding: 0 2%;
     margin: 32px auto;
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -93,6 +93,7 @@ body{
 }
 #hero div{
     max-width: 30%;
+    text-align: center;
 }
 #hero img{
     width: 100%;
@@ -127,7 +128,6 @@ body{
 }
 #sobremi article{
     max-width: 1440px;
-    padding: 0 2%;
     margin: 20px auto;
 }
 #sobremi h3{
@@ -140,14 +140,19 @@ body{
     line-height: 19px;
     margin: 16px 0;
 }
+#sobremi p a{
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
 #sobremi img{
     max-width: 140px;
 }
 
 /*Skills*/
 #skills, #hobbies{
+    width: 100%;
     max-width: 1440px;
-    padding: 0 2%;
     margin: 0 auto;
 }
 #skills h3, #hobbies h3{
@@ -186,24 +191,32 @@ body{
 
 /*1440, desktop clasico*/
 @media only screen and (max-width : 1440px) {
+    /*header*/
+    #headerhome{
+        margin: 0 32px;
+    }
+    /*hero*/
+    #hero{
+        margin: 32px;
+    }
+    /*sobremi*/
+    #sobremi article{
+        margin: 20px 32px;
+    }
+    /*skills and hobbies*/
+    #skills div, #hobbies div{
+        margin: 0 16px;
+    }
 }
+
 
 /*992, desktop pequeño o tablet grande*/
 @media only screen and (max-width : 992px) {
     /*header*/
-    #headerhome{
-        width: 100%;
-        margin: 0 auto;
-        padding: 16px 32px;
-    }
     .navbar-primary ul{
         display: none;
     }
     /*hero*/
-    #hero{
-        margin: 0;
-        padding: 0 32px;
-    }
     #hero article{
         width: 60%;
     }
@@ -222,9 +235,6 @@ body{
     #sobremi{
         padding: 32px 0;
     }
-    #sobremi article{
-        padding: 0 32px;
-    }
     #sobremi h3{
         font-size: 22px;
         line-height: 26px;
@@ -235,7 +245,6 @@ body{
     }
     /*skills and hobbies*/
     #skills, #hobbies{
-        padding: 0 32px;
         margin: 0 auto;
     }
     #skills h3, #hobbies h3{
@@ -248,15 +257,22 @@ body{
     #skills li, #hobbies li{
         width: 224px;
         height: 118px;
-        margin: 16px 16px;
+        margin: 16px;
         flex-grow: 1;
     }
 }
+
+
 /*640, tablet pequeña*/
 @media only screen and (max-width : 640px) {
+    /*header*/
+    #headerhome{
+        margin: 0 16px;
+    }
     /*hero*/
     #hero{
         flex-direction: column;
+        margin: 32px 16px;
     }
     #hero article{
         width: 100%;
@@ -287,13 +303,31 @@ body{
     #sobremi{
         padding: 32px 0;
     }
+    #sobremi article{
+        margin: 20px 16px;
+    }
     /*skills and hobbies*/
     #skills, #hobbies{
         padding: 0;
         margin: 0 auto;
     }
+    #skills div, #hobbies div{
+        margin: 0;
+    }
     #skills li, #hobbies li{
         width: 156px;
         height: 118px;
+    }
+}
+
+
+/*424, mobile*/
+@media only screen and (max-width : 424px) {
+    /*hero*/
+    .social-links{
+        flex-wrap: wrap;
+    }
+    .social-links li {
+        margin: 8px;
     }
 }
