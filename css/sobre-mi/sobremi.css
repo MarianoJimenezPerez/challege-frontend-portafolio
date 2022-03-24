@@ -1,0 +1,61 @@
+/*Sobremi*/
+#sobremi{
+    width: 100%;
+    background-color: var(--second-bg-color);
+    padding: 64px 0;
+}
+#sobremi article{
+    max-width: 1440px;
+    margin: 20px auto;
+}
+#sobremi h3{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    margin: 16px 0;
+}
+#sobremi p{
+    line-height: 19px;
+    margin: 16px 0;
+}
+#sobremi p a{
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+#sobremi img{
+    max-width: 140px;
+}
+/****************Media querys****************/
+
+/*1440, desktop clasico*/
+@media only screen and (max-width : 1440px) {
+    #sobremi article{
+        margin: 20px 32px;
+    }
+}
+
+/*992, desktop pequeño o tablet grande*/
+@media only screen and (max-width : 992px) {
+    #sobremi{
+        padding: 32px 0;
+    }
+    #sobremi h3{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    #sobremi p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+/*640, tablet pequeña*/
+@media only screen and (max-width : 640px) {
+    #sobremi{
+        padding: 32px 0;
+    }
+    #sobremi article{
+        margin: 20px 16px;
+    }
+}

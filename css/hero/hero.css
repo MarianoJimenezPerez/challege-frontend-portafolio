@@ -1,0 +1,122 @@
+/*Hero*/
+#hero{
+    max-width: 1440px;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#hero article{
+    width: 70%;
+}
+#hero h2{
+    font-size: 52px;
+    line-height: 61px;
+    font-weight: 700;
+    margin: 24px 0;
+}
+#hero p{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 24px 0;
+}
+#hero div{
+    max-width: 30%;
+    text-align: center;
+}
+#hero img{
+    width: 100%;
+    border-radius: 50%;
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+.social-links li{
+    margin-right: 32px;
+}
+.social-links a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-color);
+}
+.social-links li img{
+    width: 16px;
+    height: 16px;
+}
+/****************Media querys****************/
+
+/*1440, desktop clasico*/
+@media only screen and (max-width : 1440px) {
+    #hero{
+        margin: 32px;
+    }
+}
+
+/*992, desktop pequeño o tablet grande*/
+@media only screen and (max-width : 992px) {
+    #hero article{
+        width: 60%;
+    }
+    #hero h2{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    #hero p{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    #hero div{
+        max-width: 40%;
+    }
+}
+
+
+/*640, tablet pequeña*/
+@media only screen and (max-width : 640px) {
+    #hero{
+        flex-direction: column;
+        margin: 0 16px 32px 16px;
+    }
+    #hero article{
+        width: 100%;
+        margin: 16px 0;
+    }
+    #hero p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .social-links li{
+        margin: 0 8px;
+    }
+    .social-links h5{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .social-links img{
+        width: 10px;
+    }
+    #hero div{
+        width: 100%;
+    }
+    #hero div img{
+        width: 98px;
+        margin: 16px 0;
+    }
+}
+
+/*424, mobile*/
+@media only screen and (max-width : 424px) {
+    .social-links{
+        flex-wrap: wrap;
+    }
+    .social-links li {
+        margin: 8px;
+    }
+}

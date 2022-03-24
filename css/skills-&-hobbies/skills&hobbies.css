@@ -1,0 +1,85 @@
+/*Skills & hobbies*/
+#skills, #hobbies{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto 82px auto;
+}
+#skills h3, #hobbies h3{
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin: 32px 0;
+}
+#skills ul, #hobbies ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#skills li, #hobbies li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: var(--third-bg-color);
+    list-style: none;
+    width: 176px;
+    height: 174px;
+    margin: 0 16px;
+    padding: 16px;
+}
+#hobbies li img{
+    width: 24px;
+    height: 25px;
+}
+#skills ul h5, #hobbies ul h5{
+    font-weight: 700;
+    line-height: 19px;
+    margin: 8px 0;
+}
+
+/****************Media querys****************/
+
+/*1440, desktop clasico*/
+@media only screen and (max-width : 1440px) {
+    #skills div, #hobbies div{
+        margin: 0 16px;
+    }
+}
+
+/*992, desktop pequeño o tablet grande*/
+@media only screen and (max-width : 992px) {
+    #skills, #hobbies{
+        margin: 0 auto;
+    }
+    #skills h3, #hobbies h3{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    #skills ul, #hobbies ul{
+        flex-wrap: wrap;
+    }
+    #skills li, #hobbies li{
+        width: 224px;
+        height: 118px;
+        margin: 16px;
+        flex-grow: 1;
+    }
+}
+
+/*640, tablet pequeña*/
+@media only screen and (max-width : 640px) {
+    #skills, #hobbies{
+        padding: 0;
+        margin: 0 auto;
+    }
+    #skills div, #hobbies div{
+        margin: 0;
+    }
+    #skills li, #hobbies li{
+        width: 156px;
+        height: 118px;
+    }
+}
