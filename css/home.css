@@ -31,80 +31,15 @@ body{
     font-size: 16px;
 }
 
-/*Experiencia*/
-#experiencia{
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-}
-#experiencia h3{
-    font-size: 32px;
-    line-height: 38px;
-    font-weight: 700;
-    text-align: center;
-    margin: 32px 0;
-}
-#experiencia article{
-    display: flex;
-    flex-direction: row;
-}
-.experiencia-bloque-izquierdo{
-    width: calc(65% - 16px);
-    margin-right: 16px;
-    height: 406px;
-}
-.experiencia-bloque-derecho{
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.experiencia-bloque-derecho h4{
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    margin: 8px 0px;
-}
-.experiencia-bloque span{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    margin: 8px 0px;
-}
-.experiencia-botonera{
-    display: flex;
-    flex-direction: row;
-    margin: 8px 0px;
-}
-.experiencia-botonera button{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    margin-right: 16px;
-    padding: 10px;
-}
-.btn1{
-    color: #2A7AE4;
-    background-color: var(--main-bg-color);
-    border: 1px solid #2A7AE4;;
-}
-.btn2{
-    color: #ffffff;
-    background-color: #2A7AE4;
-    border: 1px solid #2A7AE4;
-}
-
 /****************Media querys****************/
 
 /*1440, desktop clasico*/
 @media only screen and (max-width : 1440px) {
 }
 
-
 /*992, desktop pequeño o tablet grande*/
 @media only screen and (max-width : 992px) {
 }
-
 
 /*640, tablet pequeña*/
 @media only screen and (max-width : 640px) {
@@ -112,4 +47,8 @@ body{
 
 /*424, mobile*/
 @media only screen and (max-width : 424px) {
+}
+
+/*300, mobile pequeño*/
+@media only screen and (max-width : 300px) {
 }
