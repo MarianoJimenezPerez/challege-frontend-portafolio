@@ -14,12 +14,14 @@
 #experiencia article{
     display: flex;
     flex-direction: row;
-    margin: 0 32px;
+    margin: 32px 0;
 }
 .experiencia-bloque-izquierdo{
     width: calc(65% - 16px);
     margin-right: 16px;
-    height: 406px;
+}
+.experiencia-bloque-izquierdo img{
+    width: 100%;
 }
 .experiencia-bloque-derecho{
     width: 35%;
@@ -74,6 +76,13 @@
 
 /****************Media querys****************/
 
+/*1440, desktop clasico*/
+@media only screen and (max-width : 1440px) {
+    #experiencia article{
+        margin: 32px;
+    }
+}
+
 /*992, desktop pequeño o tablet grande*/
 @media only screen and (max-width : 992px) {
     #experiencia h3{
@@ -107,6 +116,13 @@
     }
 }
 
+/*640, tablet pequeña*/
+@media only screen and (max-width : 640px) {
+    #experiencia article{
+        margin: 0 16px;
+    }
+}
+
 /*300, mobile pequeño*/
 @media only screen and (max-width : 300px) {
     .experiencia-botonera{
@@ -114,5 +130,6 @@
     }
     .experiencia-botonera button{
         margin: 5px 0;
+        width: 100%;
     }
 }

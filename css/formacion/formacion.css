@@ -29,10 +29,13 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 16px 8px;
+    width: 350px;
 }
 .formacion-box div{
-    padding: 80px 100px;
-    background-color: #ffffff;
+    text-align: center;
+}
+.formacion-box div img{
+    width: 100%;
 }
 .formacion-box h4{
     font-weight: 700;
@@ -40,12 +43,29 @@
     line-height: 26px;
     margin: 8px 0;
 }
-.formacion-box span{
+.formacion-box a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.formacion-box a::after{
+    content: url('/assets/arrow_back.svg');
+}
+.formacion-box a span{
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
 }
-
+.formacion-box-special div{
+    align-self: center;
+}
+.formacion-box-special div img{
+    height: 250px;
+    padding: 20px 0;
+}
 /****************Media querys****************/
 
 /*1440, desktop clasico*/
@@ -57,8 +77,8 @@
 
 /*992, desktop pequeño o tablet grande*/
 @media only screen and (max-width : 992px) {
-    .formacion-box div{
-        padding: 20px 40px;
+    .formacion-box{
+        width: 280px;
     }
     .formacion-contenedor h3{
         font-size: 22px;
@@ -68,7 +88,7 @@
         font-size: 16px;
         line-height: 19px;
     }
-    .formacion-box span{
+    .formacion-box a span{
         font-size: 14px;
         line-height: 16px;
     }
@@ -76,6 +96,9 @@
 
 /*640, tablet pequeña*/
 @media only screen and (max-width : 640px) {
+    .formacion-box{
+        width: calc(100% - 16px);
+    }
     #formacion .formacion-contenedor{
         margin: 0 8px;
     }
@@ -83,8 +106,8 @@
         flex-direction: column;
     }
     .formacion-box div{
-        width: 100%;
+        /*width: 100%;*/
         text-align: center;
-        padding: 20px 0;
-    }
+        /*padding: 20px 0;*/
+    }   
 }

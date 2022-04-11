@@ -1,0 +1,119 @@
+#contacto{
+    background-color: var(--second-bg-color);
+    width: 100%;
+    padding: 64px 0;
+    
+}
+.contacto-contenedor {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.contacto-contenedor .contacto-bloque-izquierdo{
+    width: 35%;
+    margin-right: 8px;
+}
+.contacto-contenedor .contacto-bloque-izquierdo img{
+    width: 100%;
+    height: 100%;
+}
+.contacto-contenedor .contacto-bloque-derecho{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    width: calc(65% - 8px);
+}
+.contacto-contenedor .contacto-welcome h4{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+.contacto-contenedor .contacto-welcome p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.contacto-contenedor .contacto-welcome span{
+    display: block;
+    margin: 1em 0;
+}
+.contacto-contenedor .contacto-bloque-derecho form{
+    display: flex;
+    flex-direction: column;
+}
+.contacto-bloque-derecho form input{
+    height: 56px;
+    margin: 16px 0;
+    border-bottom: 2px solid #C8C8C8;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+}
+.contacto-bloque-derecho form input:focus{
+    outline: none;
+    border-bottom-color: #2A7AE4;
+}
+.contacto-bloque-derecho form textarea{
+    margin: 16px 0;
+    border-bottom: 2px solid #C8C8C8;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+}
+.contacto-bloque-derecho form textarea:focus{
+    outline: none;
+    border-bottom-color: #2A7AE4;
+}
+.contacto-bloque-derecho form button{
+    margin: 16px 0;
+    width: 144px;
+    padding: 15px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.input-correct{
+    border-bottom: 2px solid #2A7AE4!important;
+}
+
+/****************Media querys****************/
+
+/*1440, desktop clasico*/
+@media only screen and (max-width : 1440px) {
+    .contacto-contenedor .contacto-bloque-izquierdo{
+        margin-left: 32px;
+    }
+    .contacto-contenedor .contacto-bloque-derecho{
+        margin-right: 32px;
+    }
+}
+
+/*992, desktop pequeño o tablet grande*/
+@media only screen and (max-width : 850px) {
+    .contacto-contenedor{
+        width: calc(100% - 32px);
+        margin: 0 16px;
+    }
+    #contacto .contacto-bloque-izquierdo{
+        display: none;
+    }
+    #contacto .contacto-bloque-derecho{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/*640, tablet pequeña*/
+@media only screen and (max-width : 640px) {
+}
+
+/*424, mobile*/
+@media only screen and (max-width : 424px) {
+}
+
+/*300, mobile pequeño*/
+@media only screen and (max-width : 300px) {
+}
