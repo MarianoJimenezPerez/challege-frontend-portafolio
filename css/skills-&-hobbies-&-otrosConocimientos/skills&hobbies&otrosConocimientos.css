@@ -1,24 +1,24 @@
 /*Skills & hobbies*/
-#skills, #hobbies{
+#skills, #hobbies, #otrosConocimientos{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto 82px auto;
 }
-#skills h3, #hobbies h3{
+#skills h3, #hobbies h3, #otrosConocimientos h3{
     font-size: 32px;
     line-height: 38px;
     font-weight: 700;
     text-align: center;
     margin: 32px 0;
 }
-#skills ul, #hobbies ul{
+#skills ul, #hobbies ul, #otrosConocimientos ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-#skills li, #hobbies li{
+#skills li, #hobbies li, #otrosConocimientos li{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -30,11 +30,11 @@
     margin: 0 16px;
     padding: 16px;
 }
-#hobbies li img{
+#hobbies li img, #otrosConocimientos li img{
     width: 24px;
     height: 25px;
 }
-#skills ul h5, #hobbies ul h5{
+#skills ul h5, #hobbies ul h5, #otrosConocimientos ul h5{
     font-weight: 700;
     line-height: 19px;
     margin: 8px 0;
@@ -44,24 +44,24 @@
 
 /*1440, desktop clasico*/
 @media only screen and (max-width : 1440px) {
-    #skills div, #hobbies div{
+    #skills div, #hobbies div, #otrosConocimientos div{
         margin: 0 16px;
     }
 }
 
 /*992, desktop pequeño o tablet grande*/
 @media only screen and (max-width : 992px) {
-    #skills, #hobbies{
+    #skills, #hobbies, #otrosConocimientos{
         margin: 0 auto;
     }
-    #skills h3, #hobbies h3{
+    #skills h3, #hobbies h3, #otrosConocimientos h3{
         font-size: 22px;
         line-height: 26px;
     }
-    #skills ul, #hobbies ul{
+    #skills ul, #hobbies ul, #otrosConocimientos ul{
         flex-wrap: wrap;
     }
-    #skills li, #hobbies li{
+    #skills li, #hobbies li, #otrosConocimientos li{
         width: 224px;
         height: 118px;
         margin: 16px;
@@ -71,14 +71,14 @@
 
 /*640, tablet pequeña*/
 @media only screen and (max-width : 640px) {
-    #skills, #hobbies{
+    #skills, #hobbies, #otrosConocimientos{
         padding: 0;
         margin: 0 auto;
     }
-    #skills div, #hobbies div{
+    #skills div, #hobbies div, #otrosConocimientos div{
         margin: 0;
     }
-    #skills li, #hobbies li{
+    #skills li, #hobbies li, #otrosConocimientos li{
         width: 156px;
         height: 118px;
     }
